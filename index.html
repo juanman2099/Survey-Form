@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Customer Satisfaction Survey</h1>
+    <p id="description">We appreciate your feedback. 
+        Please take a moment to complete this survey and help us 
+        improve our services.</p>
+    <form id="survey-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name" id="name-label">Enter Your Full Name:</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" required>
+            <label for="email" id="email-label">Enter Your Email Address:</label>
+            <input type="email" name="email" id="email" placeholder="example@email.com" required>
+            <label for="number" id="number-label">Age:</label>
+            <input type="number" name="age" id="number" placeholder="18" min="18" max="100">
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="dropdown">Select your profession:</label>
+            <select name="profession" id="dropdown">
+                <option value="" disabled selected>Select an option</option>
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="retired">Retired</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>How satisfied are you with our service?</legend>
+            <label>
+                <input type="radio" name="satisfaction" value="very satisfied">Very Satisfied
+            </label>
+            <label>
+                <input type="radio" name="satisfaction" value="satisfied">Satisfied
+            </label>
+            <label>
+                <input type="radio" name="satisfaction" value="neutral" checked>Neutral
+            </label>
+            <label>
+                <input type="radio" name="satisfaction" value="unsatisfied">Unsatisfied
+            </label>
+            <label>
+                <input type="radio" name="satisfaction" value="very unsatisfied">Very Unsatisfied
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>What can we improve?</legend>
+            <label>
+                <input type="checkbox" name="improvement" value="customer service">Customer Service
+            </label>
+            <label>
+                <input type="checkbox" name="improvement" value="website">Website
+            </label>
+            <label>
+                <input type="checkbox" name="improvement" value="product quality">Product Quality
+            </label>
+            <label>
+                <input type="checkbox" name="improvement" value="delivery">Delivery 
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Comments</legend>
+            <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+        </fieldset>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
