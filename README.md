@@ -17,4 +17,4 @@ It consists of creating a functional and responsive survey form that collects us
 
 ## Live Demo
 
-[Click here to see the project in action](https://clever-dusk-db3890.netlify.app)
+[Click here to see the project in action](https://juanman2099.github.io/Survey-Form/)
